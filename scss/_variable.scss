@@ -1,0 +1,88 @@
+body {
+	font: {
+		family: 'Arial', sans-serif;
+		size: 16px;
+		weight: $regular;
+	}
+	color: $black;
+}
+
+a {
+	font: {
+		family: 'Arial', sans-serif;
+		size: 14px;
+		weight: $regular;
+	}	
+	text-decoration: none;
+	color: $white;
+	&:hover {
+		color: $white;		
+	    text-decoration: none;
+	    opacity: 0.9;
+		transition: 1s; 
+	}
+	&:active {
+		opacity: 0.9;
+	}
+	&:focus {
+		opacity: 0.9;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font: {
+			family: 'Arial-bold', sans-serif;
+			size: 30px;
+			weight: $bold;
+	}
+	color: $white;
+	line-height: 1;
+    margin-bottom: 0;
+}
+
+
+h2 {
+	font: {
+		family: 'Arial-bold', sans-serif;
+		size: 24px;
+		weight: $bold;
+	}
+	text-transform: uppercase;
+	color: $black;	
+}
+
+h3 {
+	font: {
+		family: 'Arial-bold', sans-serif;
+		size: 20px;
+		weight: $bold;
+	}
+	line-height: 1.5;
+	color: $black;	
+}
+
+button {
+	background-color: $yellow;
+	border-width: 0;
+	border-radius: 10px;
+	&:hover {
+		opacity: 0.9;
+		transition: 1s;
+	}
+	a {
+		@extend a;		
+		&:hover {			
+			transition: 1s;
+		}
+    }
+}
+
+
+
+
+
+

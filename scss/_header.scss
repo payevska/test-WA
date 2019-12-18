@@ -1,0 +1,52 @@
+/* -------   header   ------- */
+header {
+	display: flex;
+	position: fixed;
+	z-index: 101;
+    width: 100%;
+}
+
+.header-wrap {
+	display: flex;
+}
+
+.header-right {
+	display: flex;
+    flex-direction: column;
+}
+
+.first-line {
+	display: flex;
+	justify-content: space-between;
+	&__connection {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.second-line {
+	display: flex;
+}
+
+.menu-header {
+	width: 100%;
+    background-color: $yellow;
+    border-radius: 10px;
+	&__menu-wrap {
+		display: flex;
+		width: 100%;
+    	justify-content: space-between;
+    	&-link-group {
+    		display: flex;
+    	}
+	}
+}
+
+.name-submenu {
+	display: flex;
+    align-items: center;
+}
+
+.submenu {
+	display: none;
+}

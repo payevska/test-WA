@@ -6,10 +6,10 @@
 	<title>test-WA</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/79503d5842.js"></script>	
-	<link rel="stylesheet" href="scss/style.css">
+	<link rel="stylesheet" href="../scss/style.css">
 </head>
 <body>
-	<!-- HEADER start -->
+	<!-- Header start -->
 	<header id="myHeader">	
 	
 		<!-- menu -->
@@ -17,17 +17,21 @@
 			<div class="row">
 				<div class="col-sm header-wrap">
 
-					<div class="col-sm-2 logotype">
+					<div class="col-sm-2 header-left">
 						<a href="#myHome" class="logo-header">
 							<img src="images/logo-header.png" alt="logotype">
 						</a>
 					</div>
-					
-					<div class="first-line">
-						<div class="col-sm first-line__connection">
+					<div class="col-sm-10 header-right">					
+						<div class="first-line">
+							<div class="first-line__connection">			
+								<img src="images/index-map.png" alt="foto-adress" class="adress">
+								<div class=" header-adress">			
+								г. Харьков, ул. Мироносицкая 10</div>
+							</div>
 							<div class="first-line__connection">				
-								<img src="images/phon.png" alt="foto-phon" class="phon">
-								<div class="col-3 col-sm-3 header-phone">			
+								<img src="images/phone.png" alt="foto-phone" class="phone">
+								<div class="header-phone">			
 								+38 (099) 990-81-00  (viber, telegram)</div>
 							</div>	
 							<div class="first-line__connection">
@@ -38,56 +42,97 @@
 									<img src="images/instagram.png" alt="instagram">
 								</a>
 							</div>	
-						</div>
-					</div>
-							
-					<div class="second-line">
-						<menu class="menu-header">
-							<ul class="menu-header__menu-wrap">
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">Главная</a>
-								</li>						
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">Туры</a>
-									<div class="submenu">
-										<ul class="submenu__link-sb">
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">Страны</a>
-								</li>
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">Услуги</a>
-									<div class="submenu">
-										<ul class="submenu__link-sb">
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-											<li></li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">О компании</a>
-								</li>
-								<li class="menu-header__menu-wrap_link-group">
-									<a href="#myProducts" class="link-active">Контакты</a>
-								</li>			
-							</ul>												
-						</menu>
+						</div>						
+								
+						<div class="second-line">
+							<menu class="menu-header">
+								<ul class="menu-header__menu-wrap">
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active">Главная</a>
+									</li>						
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active name-submenu">
+											<div class="tip">Туры</div>
+											<img src="images/arrow-down.png" alt="instagram">
+										</a>
+										<div class="submenu">
+											<ul class="submenu__link-sb">
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active">Страны</a>
+									</li>
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active name-submenu">
+											<div class="tip">Услуги</div>
+											<img src="images/arrow-down.png" alt="instagram">
+										</a>						
+										<div class="submenu">
+											<ul class="submenu__link-sb">
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active">О компании</a>
+									</li>
+									<li class="menu-header__menu-wrap_link-group">
+										<a href="#myProducts" class="link-active">Контакты</a>
+									</li>			
+								</ul>												
+							</menu>
 
+						</div>
 					</div>								
             	</div>	
 			</div>				
 		</div>
 	</header>
+	<!-- Header finish -->
+
+	<!-- Home start -->
+	<section-1 id="myHome">
+		<div class="col-sm home">
+			<div class="container">				
+				<div class="row">
+					<div class="col-sm home-wrap">
+						<div class="main">
+							<div class="main__main-title">
+								<h1 class="main__main-title_title">Лучшие предложения по солнечному Египту из Харькова</h1>					
+								<div class="main__main-title_main-button">
+									<button class="button-head">
+										<a href="#myOffer" class="button-head__btn">Получить предложение</a>
+									</button>					
+								</div>
+							</div>
+							<div class="main__main-carousel">
+				                <a href="#myAbout" class="circle-link">  	
+				                	<i class="fas fa-circle"></i>	                	
+				                </a>
+				                <a href="#myAbout" class="circle-link">  	
+				                	<i class="fas fa-circle"></i>	                	
+				                </a>
+				                <a href="#myAbout" class="circle-link">  	
+				                	<i class="fas fa-circle"></i>	                	
+				                </a>
+							</div>
+						</div>				
+					</div>
+				</div>	
+			</div>		
+		</div>		
+	</section-1>
+<!-- Home finish -->
 
 
 

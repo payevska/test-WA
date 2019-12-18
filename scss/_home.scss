@@ -1,0 +1,32 @@
+section-1 {
+	display: flex;
+	display: -webkit-flex;  
+}
+
+.home {
+	background: url('../dist/images/home-img1.png') no-repeat top fixed;	
+    width: 100%;
+	min-height: 100vh;
+	display: flex;	
+    background-size: 100%; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+	background-size: cover;
+}
+
+.home-wrap {    
+	display: flex;
+    min-height: 100vh;
+    padding-top: 320px;		
+}
+
+.main {
+	&__main-title {
+		background-color: $blue-middle;
+	}
+}
+
+
+
+
