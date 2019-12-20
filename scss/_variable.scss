@@ -7,6 +7,16 @@ body {
 	color: $black;
 }
 
+#the_element_that_you_applied_translate_to {
+  -webkit-filter: blur(0.000001px);
+  filter: blur(0.000001px);
+}
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 a {
 	font: {
 		family: 'Arial', sans-serif;
@@ -18,15 +28,9 @@ a {
 	&:hover {
 		color: $white;		
 	    text-decoration: none;
-	    opacity: 0.9;
+	    opacity: 0.5;
 		transition: 1s; 
-	}
-	&:active {
-		opacity: 0.9;
-	}
-	&:focus {
-		opacity: 0.9;
-	}
+	}	
 }
 
 ul {
@@ -69,15 +73,18 @@ button {
 	background-color: $yellow;
 	border-width: 0;
 	border-radius: 10px;
+	padding: 10px 29px;
 	&:hover {
 		opacity: 0.9;
 		transition: 1s;
 	}
 	a {
-		@extend a;		
-		&:hover {			
-			transition: 1s;
-		}
+		@extend a;
+		font-size: 18px;
+		color: $black;	
+		&:hover {
+			color: $black;
+		}	
     }
 }
 

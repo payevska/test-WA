@@ -6,10 +6,15 @@
 	<title>test-WA</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/79503d5842.js"></script>	
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="../scss/style.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
 </head>
 <body>
-	<!-- Header start -->
+<!-- Header start ----------------->
 	<header id="myHeader">	
 	
 		<!-- menu -->
@@ -26,7 +31,7 @@
 						<div class="first-line">
 							<div class="first-line__connection">			
 								<img src="images/index-map.png" alt="foto-adress" class="adress">
-								<div class=" header-adress">			
+								<div class="header-adress">			
 								г. Харьков, ул. Мироносицкая 10</div>
 							</div>
 							<div class="first-line__connection">				
@@ -35,10 +40,10 @@
 								+38 (099) 990-81-00  (viber, telegram)</div>
 							</div>	
 							<div class="first-line__connection">
-								<a href="#myHome" class="facebook">
+								<a href="#" class="facebook">
 									<img src="images/facebook.png" alt="facebook">
 								</a>
-								<a href="#myHome" class="instagram">
+								<a href="#" class="instagram">
 									<img src="images/instagram.png" alt="instagram">
 								</a>
 							</div>	
@@ -48,46 +53,47 @@
 							<menu class="menu-header">
 								<ul class="menu-header__menu-wrap">
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active">Главная</a>
+										<a href="#myHome" class="link-active">Главная</a>
 									</li>						
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active name-submenu">
+										<a href="#myOffer" class="link-active name-submenu">
 											<div class="tip">Туры</div>
-											<img src="images/arrow-down.png" alt="instagram">
+											<img src="images/arrow-down.png" alt="arrow-down" class="arrow-down">
 										</a>
-										<div class="submenu">
-											<ul class="submenu__link-sb">
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
+										
+											<ul class="submenu link-sb1">
+												<li><a href="#myOffer">Горящие туры</a></li>
+												<li><a href="#myOffer">Поиск тура</a></li>
+												<li><a href="#myOffer">Туры по Украине</a></li>
+												<li><a href="#myOffer">Экскурсионные туры</a></li>
+												<li><a href="#myOffer">Week end туры</a></li>
 											</ul>
-										</div>
+										
 									</li>
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active">Страны</a>
+										<a href="#myOffer" class="link-active">Страны</a>
 									</li>
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active name-submenu">
+										<a href="#" class="link-active name-submenu">
 											<div class="tip">Услуги</div>
-											<img src="images/arrow-down.png" alt="instagram">
+											<img src="images/arrow-down.png" alt="arrow-down" class="arrow-down">
 										</a>						
-										<div class="submenu">
-											<ul class="submenu__link-sb">
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
+										
+											<ul class="submenu link-sb2">
+												<li><a href="#">Авиабилеты</a></li>
+												<li><a href="#">Визовая поддержка</a></li>
+												<li><a href="#">Индивидуальный трансфер</a></li>
+												<li><a href="#">Подарочные сертификаты</a></li>
+												<li><a href="#">Бронирование отелей и апартаментов</a></li>
+												<li><a href="#">Как забронировать и оплатить тур</a></li>
 											</ul>
-										</div>
+										
 									</li>
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active">О компании</a>
+										<a href="#myAbout" class="link-active">О компании</a>
 									</li>
 									<li class="menu-header__menu-wrap_link-group">
-										<a href="#myProducts" class="link-active">Контакты</a>
+										<a href="#myFooter" class="link-active">Контакты</a>
 									</li>			
 								</ul>												
 							</menu>
@@ -100,47 +106,287 @@
 	</header>
 	<!-- Header finish -->
 
-	<!-- Home start -->
+<!-- Home start ---------------------->
 	<section-1 id="myHome">
-		<div class="col-sm home">
-			<div class="container">				
-				<div class="row">
-					<div class="col-sm home-wrap">
-						<div class="main">
-							<div class="main__main-title">
-								<h1 class="main__main-title_title">Лучшие предложения по солнечному Египту из Харькова</h1>					
-								<div class="main__main-title_main-button">
-									<button class="button-head">
-										<a href="#myOffer" class="button-head__btn">Получить предложение</a>
-									</button>					
-								</div>
+		<div class="home">
+
+			<!-- start carousel -->
+			<div class="home-slider">
+	      		<div class="slide">
+	      			<div class="img-wrap">
+		        		<img src="images/home-img1.png" class="" alt="..."> 
+		        	</div>
+	        		<div class="content-slider">
+	        			<div class="box-text">
+		          			<h1 class="main-title">Лучшие предложения по солнечному Египту из Харькова</h1>					
+							<div class="main-button">
+								<button class="button-head">
+									<a href="#myOffer" class="button-head__btn">Получить предложение</a>
+								</button>					
 							</div>
-							<div class="main__main-carousel">
-				                <a href="#myAbout" class="circle-link">  	
-				                	<i class="fas fa-circle"></i>	                	
-				                </a>
-				                <a href="#myAbout" class="circle-link">  	
-				                	<i class="fas fa-circle"></i>	                	
-				                </a>
-				                <a href="#myAbout" class="circle-link">  	
-				                	<i class="fas fa-circle"></i>	                	
-				                </a>
+						</div>
+	        		</div>
+	     		</div>
+	     		<div class="slide">
+	      			<div class="img-wrap">
+		        		<img src="images/home-img2.png" class="" alt="..."> 
+		        	</div>
+	        		<div class="content-slider">
+	        			<div class="box-text">
+		          			<h1 class="main-title">Лучшие предложения по солнечному Египту из Харькова</h1>					
+							<div class="main-button">
+								<button class="button-head">
+									<a href="#myOffer" class="button-head__btn">Получить предложение</a>
+								</button>					
 							</div>
-						</div>				
-					</div>
-				</div>	
-			</div>		
-		</div>		
+						</div>
+	        		</div>
+	     		</div>
+	     		<div class="slide">
+	      			<div class="img-wrap">
+		        		<img src="images/home-img4.png" class="" alt="..."> 
+		        	</div>
+	        		<div class="content-slider">
+	        			<div class="box-text">
+		          			<h1 class="main-title">Лучшие предложения по солнечному Египту из Харькова</h1>					
+							<div class="main-button">
+								<button class="button-head">
+									<a href="#myOffer" class="button-head__btn">Получить предложение</a>
+								</button>					
+							</div>
+						</div>
+	        		</div>
+	     		</div>			     		
+		    </div>
+		    <!-- finish carousel -->
+	    </div>
 	</section-1>
-<!-- Home finish -->
+	<!-- Home finish -->
 
+<!-- Offer start ------------------->
+	<section-2 id="myOffer">	
+		<div class="container">
+			<div class="row">
+				<div class="col-sm offer-wrap">
+					<div class="offer-title">
+						<div class="offer-title__top1">Горящие туры</div>
+						<div class="offer-title__top2">Популярные туры</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider start -->	
+		<div class="offer-slider">
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img1.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="offer-info">
+				<div class="info-slide">
+					<div class="info-slide__info-left">
+						<img src="images/offer-img2.png" class="info-slide__info-left_info-img" alt="offer-img">
+					</div>
+					<div class="info-slide__info-right">
+						<div class="info-slide__info-right_info-top">
+							<div class="i1">8 марта в Cyrene Sharm hotel</div>
+							<div class="i2">(12.03.2018 — 19.03.2018)</div>
+						</div>
+						<div class="info-slide__info-right_info-text">
+							Перелёт, питание по системе all inclusive, трансфер
+						</div>
+						<div class="info-slide__info-right_info-price">
+							<div class="price1">1 259 грн</div>
+							<div class="price2">/за 1 человека</div>
+						</div>
+					</div>
+					<a href="#myHome" class="offer-arrow-right">
+						<div class="offer-circle">
+							<img src="images/arrow-right-small.png" class="arrow-right-small" alt="arrow-right-small">
+						</div>
+					</a>
+				</div>
+			</div>			
+		</div>
+		<!-- slider finish -->			
+	</section-2>
 
-
+<!-- About start ------------------->
+	<section-3 id="myAbout">	
+		<div class="container">
+			<div class="row">
+				<div class="col-sm about-wrap">
+					<div class="about-title">НАШИ ПРЕИМУЩЕСТВА</div>
+					<div class="about-contant">
+						<div class="col-sm-5 about-contant__about-foto">
+							<img src="images/about-img.png" alt="about-img">
+						</div>
+						<div class="col-sm-7 about-contant__about-text">
+							<div class="text-box scroll">
+								Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море.  
+							</div>
+							<div class="about-scrol"></div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section-3>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
+
+
+

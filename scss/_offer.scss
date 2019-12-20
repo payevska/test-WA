@@ -1,0 +1,137 @@
+/* -------   offer   ------- */
+section-2 {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	padding: 75px 65px;
+    
+}
+
+.offer-wrap {
+	padding-bottom: 70px;
+}
+
+.offer-title {
+    display: flex;
+	&__top1 {
+		@extend h3;
+		color: $yellow;
+		margin-right: 32px;
+	}
+	&__top2 {
+		@extend h3;
+	}
+}
+
+.offer-slider {
+	
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+.info-slide {
+	display: flex;
+	position: relative;
+	width: 520px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: $gray-light;
+	&__info-left {
+		display: flex;
+    	width: 100%;
+		position: relative;
+	    overflow: hidden;
+	    width: 233px;
+	    height: 175px;
+	    border-radius: 10px;
+	    margin: 14px 28px 14px 14px;
+	    &_info-img {
+	    	margin-left: -60px;
+	    }
+	}
+	&__info-right {
+	    display: flex;
+    	flex-direction: column;
+    	padding: 25px 20px 28px 0px;
+	    &_info-text {
+	    	font-size: 14px;
+	    	line-height: 1.3;
+			color: $gray;
+    		padding-top: 16px;
+    		padding-bottom: 20px;
+    		border-top: 1px solid $gray-dark;
+
+	    }
+	    &_info-price {
+	    	display: flex;
+	    }
+	}
+
+}
+
+.i1 {
+	font: {
+		family: 'Arial-bold', sans-serif;
+		size: 17px;
+		weight: $bold;
+	}
+}
+.i2 {	
+	font-size: 14px;
+	color: $gray;
+}
+.price1 {
+	font-size: 20px;
+}
+.price2 {
+	margin-left: 10px;
+    font-size: 11px;
+    color: $gray;
+}
+
+.offer-arrow-right {
+	position: absolute;
+	right: 20px;
+    bottom: 20px;
+}
+
+.offer-circle {
+	position: relative;
+	width: 40px;
+    height: 40px;
+    background-color: $yellow;
+    border-radius: 50%;
+}
+
+.arrow-right-small {
+	text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 18px;
+    top: 13px;
+} 
+
+
+.slick-prev:before {
+	background-image: url('../dist/images/arrow-left.png');
+	background-repeat: no-repeat;
+    
+    color: #ffffff00;
+    
+    }
+
+.slick-next:before {
+	background-image: url('../dist/images/arrow-right.png');
+	background-repeat: no-repeat;
+    
+    color: #ffffff00;
+    
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,10 +1,11 @@
+/* -------   home   ------- */
 section-1 {
 	display: flex;
 	display: -webkit-flex;  
 }
 
 .home {
-	background: url('../dist/images/home-img1.png') no-repeat top fixed;	
+	background: url('../dist/images/home-img1.png') no-repeat center center fixed;	
     width: 100%;
 	min-height: 100vh;
 	display: flex;	
@@ -13,20 +14,82 @@ section-1 {
 	-moz-background-size: cover;
 	-o-background-size: cover;	
 	background-size: cover;
+	padding-right: 0;
+    padding-left: 0;
+}
+
+.home-slider {
+	width: 100%;
+	min-height: 100vh;
 }
 
 .home-wrap {    
 	display: flex;
-    min-height: 100vh;
     padding-top: 320px;		
 }
 
-.main {
-	&__main-title {
-		background-color: $blue-middle;
-	}
+.content-slider {
+	left: 0;
+}
+.slide {
+	width: 100%;
+	overflow: hidden;
 }
 
+.img-wrap img {
+	min-height: 100vh;
+	width: 100%; 
+}
 
+.main-title {
+	padding-bottom: 42px;
+}
+.main-button {
+	text-align: left;
+}
 
+.slick-prev {
+    left: -14px;
+}
 
+.slick-next {
+    right: -14px;
+}
+
+.slick-dots {
+    bottom: 60px;
+    margin-left: -520px;
+}
+
+.slick-dots li button:before {
+	color: $white;
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: $yellow;
+}
+
+/* .slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 0.5;
+} */
+
+.box-text {
+	//background-color: $blue-middle;
+	background: linear-gradient( -6deg, rgba(15,37,71,0.49) 0%, rgba(25,44,74,0.32) 68%, rgba(34,51,77,0) 100%);
+	padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 386px;
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    padding-right: 98px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
