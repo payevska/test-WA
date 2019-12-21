@@ -48,7 +48,27 @@ form {
     background-clip: padding-box;
     border: none;
     border-bottom: 1px solid $white-opacity;
-    border-radius: .25rem;
+    border-radius: 0;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $white;
+    vertical-align: middle;
+    background: url('../dist/images/arrow-white.png') no-repeat right center;
+    background-color: $black-opacity;
+    border: none;
+    border-bottom: 1px solid $white-opacity;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
