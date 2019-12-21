@@ -36,6 +36,7 @@ section-3 {
 		}
 	}
 	&__about-text {
+		display: flex;
 		font-size: 16px;
 		line-height: 1.5;
 	    padding: 70px 52px 0px 90px;
@@ -46,7 +47,7 @@ section-3 {
 	height: 190px;
 	overflow: auto;
     padding-right: 47px;
-    border-right: 1px solid $gray-dark;
+    //border-right: 1px solid $gray-dark;
 }
 
 .scroll::-webkit-scrollbar {
@@ -73,3 +74,10 @@ section-3 {
 
 
 
+.line-vertical {
+	height: 190px;
+    width: 1px;
+    background-color: $gray-dark;
+    position: absolute;
+    right: 56px;
+}
