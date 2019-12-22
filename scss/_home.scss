@@ -52,26 +52,28 @@ section-1 {
 	@extend button;
 }
 
-.slick-prev {
-    left: -14px;
+.home-slider > .slick-prev {
+    left: 25px;
+    z-index: 5;
 }
 
-.slick-next {
-    right: -14px;
+.home-slider > .slick-next {
+    right: 25px;
+    z-index: 5;
 }
 
-.slick-dots {
+.home-slider > .slick-dots {
     bottom: 60px;
     margin-left: -520px;
 }
 
-.slick-dots li button:before {
+.home-slider > .slick-dots li button:before {
 	color: $white;
 	font-size: 20px;
 	opacity: 0.8;
 }
 
-.slick-dots li.slick-active button:before {
+.home-slider > .slick-dots li.slick-active button:before {
     opacity: .75;
     color: $yellow;
 }

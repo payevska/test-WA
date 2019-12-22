@@ -27,10 +27,7 @@ section-2 {
 	
 }
 
-.slick-initialized .slick-slide {
-    display: flex;
-    justify-content: center;
-}
+
 .info-slide {
 	display: flex;
 	position: relative;
@@ -113,25 +110,42 @@ section-2 {
     top: 13px;
 } 
 
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
 
 .slick-prev:before {
 	background-image: url('../dist/images/arrow-left.png');
-	background-repeat: no-repeat;
-    
+	background-repeat: no-repeat;    
     color: #ffffff00;
     
     }
 
 .slick-next:before {
 	background-image: url('../dist/images/arrow-right.png');
-	background-repeat: no-repeat;
-    
-    color: #ffffff00;
-    
+	background-repeat: no-repeat;    
+    color: #ffffff00;    
+}
+
+.offer-slider > .slick-prev {
+    left: -15px;
+    z-index: 5;
+}
+
+.offer-slider > .slick-next {
+    right: -25px;
+    z-index: 5;
 }
 
 .slick-slider .slick-track,
 .slick-slider .slick-list
 {
     -webkit-font-smoothing: antialiased;
+}
+
+.offer-slider  .slick-active button:before {
+    
+    color: $white;
 }
