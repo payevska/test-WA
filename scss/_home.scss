@@ -37,19 +37,33 @@ section-1 {
 }
 
 .img-wrap img {
+	max-width: 100vw;
 	min-height: 100vh;
-	width: 100%; 
 }
 
 .main-title {
+	padding-left: 180px;
 	padding-bottom: 42px;
+	@media (min-width: 1440px) and (max-width: 2303.98px) {
+    	padding-left: 0;
+    }	
 }
 .main-button {
 	text-align: left;
 	
 }
 .btn {
+	margin-left: 180px;
 	@extend button;
+	@media (min-width: 1440px) and (max-width: 2303.98px) {
+    	margin-left: 0;
+    }
+}
+
+.home-slider > .slick-slide img
+{
+	max-width: 100vw;
+    display: block;
 }
 
 .home-slider > .slick-prev {
@@ -80,15 +94,261 @@ section-1 {
 
 .box-text {
 	background: linear-gradient( -6deg, rgba(15,37,71,0.49) 0%, rgba(25,44,74,0.32) 68%, rgba(34,51,77,0) 100%);
-	padding-top: 55px;
-    padding-bottom: 55px;
+	padding-top: 58px;
+    padding-bottom: 75px;
     padding-left: 386px;
+    @media (min-width: 1700px) and (max-width: 1769.98px) {
+    	padding-left: 300px;
+    }
+     @media (min-width: 1440px) and (max-width: 1599.98px) {
+    	padding-left: 150px;
+    }
     position: absolute;
-    bottom: 180px;
-    left: 0;
+    top: 70%;
+    @media (min-width: 1440px) and (max-width: 2303.98px) {
+    	top: 64%;
+    }
+    left: 0%;
     padding-right: 98px;
 }
 
 .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
+
+
+/* ------ media query ------ */
+@include television {
+	.box-text {
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 65%;
+    	left: -33%;
+	}
+	.main-title {
+		padding-left: 183px;
+		padding-bottom: 30px;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 180px;
+	}
+}
+@include desktop {
+	.box-text {
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 65%;
+    	left: -39%;
+	}
+	.main-title {
+		padding-left: 183px;
+		padding-bottom: 30px;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 180px;
+	}
+}
+@include laptop {
+	.box-text {
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 64%;
+    	left: -44%;
+    	padding-right: 0;
+	}
+	.main-title {
+		font-size: 25px;
+		padding-left: 183px;
+		padding-bottom: 30px;
+
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 180px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+}
+
+/* ---- iPadPro ---- */
+@include iPadPro {
+	
+}
+@include iPadPro-portrait {
+	.box-text {
+		width: 100%;
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 64%;
+    	left: 0;
+    	padding-left: 0;
+    	padding-right: 0;
+    	text-align: center;
+	}
+	.main-title {
+		font-size: 25px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 0;
+	}
+}
+@include iPadPro-landscape {
+		.box-text {
+		width: 100%;
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 64%;
+    	left: 0;
+    	padding-left: 0;
+    	padding-right: 0;
+    	text-align: center;
+	}
+	.main-title {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 0;
+	}
+}
+
+/* ---- iPad ---- */
+@include iPad {	
+		
+}
+@include iPad-landscape {	
+		
+}
+@include iPad-portrait {
+	.box-text {
+		width: 100%;
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 42%;
+    	left: 0;
+    	padding-left: 0;
+    	padding-right: 0;
+    	text-align: center;
+	}
+	.main-title {
+	    width: 62%;
+	    margin: 0 auto;
+	    line-height: 1.5;
+		font-size: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 0;
+	}
+}
+@include tablet {
+	.box-text {
+		width: 100%;
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 40%;
+    	left: 0;
+    	padding-left: 0;
+    	padding-right: 0;
+    	text-align: center;
+	}
+	.main-title {
+		width: 62%;
+	    margin: 0 auto;
+	    line-height: 1.5;
+		font-size: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 0;
+	}
+}
+@include tablet-mini {
+	.box-text {
+		width: 100%;
+		padding-top: 30px;
+	    padding-bottom: 40px;
+	    top: 35%;
+    	left: 0;
+    	padding-left: 0;
+    	padding-right: 0;
+    	text-align: center;
+	}
+	.main-title {
+		width: 62%;
+	    margin: 0 auto;
+	    line-height: 1.5;
+		font-size: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.home-slider > .slick-dots {    
+	    margin: 0 auto;
+	}
+	.main-button {
+		text-align: center;
+	}
+	.btn {
+		margin-left: 0;
+	}
+}
+@include phone {
+
+}
+@include iphone-X {
+	
+}
+@include iphone-X-portrait {
+	
+}
+@include iphone-X-landscape {
+	
+}	
+@include iphone-5 {
+	
+}
+
+
