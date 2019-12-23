@@ -6,33 +6,12 @@ $(document).ready(function(){
 	  infinite: true,
 	  speed: 500,
 	  fade: true,
+	  arrows: false,
 	  cssEase: 'linear'
 	});
 
 
-//slider slick about-page
-	
-	/*$('.offer-slider').slick({
-	  lazyLoad: 'ondemand',
-	  slidesToShow: 3,
-	  slidesToScroll: 1
-	  responsive: [{
-            breakpoint: 1500,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-
-        }, {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-            }
-        }
-        ]
-	});*/
-
+//slider slick offer-page
 	$('.offer-slider').slick({
   dots: false,
   infinite: false,
