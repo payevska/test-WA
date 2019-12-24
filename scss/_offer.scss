@@ -116,14 +116,14 @@ section-2 {
 }
 
 
-.slick-prev:before {
+.offer-slider > .slick-prev:before {
 	background-image: url('../dist/images/arrow-left.png');
 	background-repeat: no-repeat;    
     color: #ffffff00;
     
     }
 
-.slick-next:before {
+.offer-slider > .slick-next:before {
 	background-image: url('../dist/images/arrow-right.png');
 	background-repeat: no-repeat;    
     color: #ffffff00;    

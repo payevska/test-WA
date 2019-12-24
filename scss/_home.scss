@@ -40,12 +40,15 @@ section-1 {
     @media (min-width: 1440px) and (max-width: 1919.98px) {
         width: 85%;
   	}
+  	@media (min-width: 1366px) and (max-width: 1439.98px) {
+        width: 87%;
+  	}
   	@media (min-width: 1280px) and (max-width: 1365.98px) {
         width: 92%;
   	}
   	@media (min-width: 1200px) and (max-width: 1279.98px) {
         width: 96%;
-  	}
+  	}  	
     display: flex;
     flex-direction: column;
 	padding-top: 65px;
@@ -56,8 +59,11 @@ section-1 {
 
 .main-title {
 	@extend h1;
-	@media (min-width: 1200px) and (max-width: 1365.98px) {
+	@media (min-width: 1366px) and (max-width: 1439.98px) {
         font-size: 26px;
+  	}
+	@media (min-width: 1200px) and (max-width: 1365.98px) {
+        font-size: 28px;
   	}
 	padding-bottom: 40px;
 }
@@ -76,6 +82,9 @@ section-1 {
     left: -27%;
     @media (min-width: 1440px) and (max-width: 1919.98px) {
         left: -37%;
+  	}
+  	@media (min-width: 1366px) and (max-width: 1439.98px) {
+        left: -39%;
   	}
   	@media (min-width: 1280px) and (max-width: 1365.98px) {
         left: -41%;
@@ -103,40 +112,10 @@ section-1 {
 
 /* ------ media query ------ */
 @include television {
-	/* .box-text {
-		padding-top: 30px;
-	    padding-bottom: 40px;
-	    top: 65%;
-	    	left: -33%;
-	}
-	.main-title {
-		padding-left: 183px;
-		padding-bottom: 30px;
-	}
-	.main-button {
-		text-align: center;
-	}
-	.btn {
-		//margin-left: 180px;
-	} */
+	
 }
 @include desktop {
-	/* .box-text {
-		padding-top: 30px;
-	    padding-bottom: 40px;
-	    top: 65%;
-	    	left: -39%;
-	}
-	.main-title {
-		padding-left: 183px;
-		padding-bottom: 30px;
-	}
-	.main-button {
-		text-align: center;
-	}
-	.btn {
-		//margin-left: 180px;
-	} */
+	
 }
 @include laptop {
 	.content-slider {
@@ -157,6 +136,16 @@ section-1 {
 	.home-slider > .slick-dots li .btn:before {
 	    font-size: 15px;
 	}	
+}
+@include iPadPro-portrait {
+	.img-wrap img {
+		min-height: 100vh;
+	}
+}
+@include iPad-portrait {
+	.img-wrap img {
+		min-height: 100vh;
+	}
 }
 @include tablet {
 	.content-slider {
@@ -197,7 +186,7 @@ section-1 {
     	top: 35%;
 	}
 	.box-text {
-		width: 55%;
+		width: 58%;
 		justify-items: center;
     	text-align: center;
     	padding-top: 12px;
@@ -231,7 +220,7 @@ section-1 {
     	top: 35%;
 	}
 	.box-text {
-		width: 100%;
+		width: 88%;
 		justify-items: center;
     	text-align: center;
     	padding-top: 30px;
@@ -256,6 +245,40 @@ section-1 {
 	}
 }
 @include iphone-X {
+	.content-slider {
+    	width: 82%;
+    	left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, 0%);
+    	justify-content: center;
+    	top: 35%;
+	}
+	.box-text {
+		width: 100%;
+		justify-items: center;
+    	text-align: center;
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+		//align-items: center;
+	}
+	.main-title {
+		font-size: 15px;
+	    line-height: 1.6;
+	    padding-bottom: 16px;
+	}
+	.home-slider > .slick-dots {
+	    left: 0;
+	}
+	.home-slider > .slick-dots li button:before, 
+	.home-slider > .slick-dots li .btn:before {
+	    font-size: 12px;
+	}
+	.btn {
+		font-size: 12px;
+    	padding: 6px 16px;
+	}
+}
+@include iphone-6-7-8 {
 	.content-slider {
     	width: 82%;
     	left: 50%;

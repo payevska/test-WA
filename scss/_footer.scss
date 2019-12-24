@@ -79,18 +79,73 @@ section-5 {
 	flex-direction: column;
 		color: $gray-ton;
 		font-size: 14px;		
-	&__connection {
+	&__connection-footer {
 		padding-bottom: 24px;
 		display: flex;
     	align-items: center;
 	}	
 }
 
-.header-phone {
+.footer-phone {
     margin-left: 5px;
 }
 
 .contact-web {
 	border-top: 1px solid $gray-line;
 		padding-top: 22px;
+}
+
+
+/* ------ media query ------ */
+@include television {
+	
+}
+@include desktop {
+	
+}
+@include laptop {
+	
+}
+
+/* ---- iPadPro ---- */
+@include iPadPro {
+	
+}
+@include iPadPro-portrait {
+	
+}
+@include iPadPro-landscape {
+		
+}
+
+/* ---- iPad ---- */
+@include iPad {	
+		
+}
+@include iPad-landscape {	
+		
+}
+@include iPad-portrait {
+		
+}
+@include tablet {
+	
+}
+@include tablet-mini {
+	
+}
+@include phone {
+
+}
+@include iphone-X {
+	
+}
+@include iphone-X-portrait {
+	
+}
+@include iphone-X-landscape {
+	
+}	
+@include iphone-5 {
+	
 }

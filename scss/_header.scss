@@ -13,7 +13,17 @@ header {
 }
 
 .header-left {
-	padding-left: 0;
+	padding-left: 15px;
+	@media (min-width: 1200px) {
+        padding-left: 0;
+  	}
+}
+
+.logo-header {
+	display: flex;
+	img {
+		width: 100%;
+	}
 }
 
 .header-right {
@@ -21,6 +31,10 @@ header {
 	display: flex;
     flex-direction: column;
     padding-left: 12px;
+    padding-right: 0;
+    @media (max-width: 575px) {
+        display: none;
+  	}
 }
 
 .first-line {
@@ -130,4 +144,113 @@ header {
 
 .instagram {
 	margin-left: 25px;
+}
+
+
+/* ------ media query ------ */
+@include television {
+	
+}
+@include desktop {
+	
+}
+@include laptop {
+	.logo-header {
+		width: 79%;
+	}
+
+	.first-line {
+		font-size: 14px;
+	}
+	.link-active {
+		font-size: 16px;
+	}
+}
+
+/* ---- iPadPro ---- */
+@include iPadPro {
+	
+}
+@include iPadPro-portrait {
+	
+}
+@include iPadPro-landscape {
+		
+}
+
+/* ---- iPad ---- */
+@include iPad {	
+		
+}
+@include iPad-landscape {	
+		
+}
+@include iPad-portrait {
+		
+}
+@include tablet {
+
+	.header-right {
+	    max-width: 100%;
+	}
+	.first-line {
+		font-size: 14px;
+	}
+	.link-active {
+		font-size: 14px;
+	}
+
+
+}
+@include tablet-mini {
+	.header-right {
+	    max-width: 100%;
+	    padding-right: 0;
+	}
+	.first-line {
+		font-size: 10px;
+		&__connection {
+			&_icon { 
+				img {
+					width: 60%;
+				}				
+			}
+		}
+	}
+	.header-adress {
+		margin-left: 3px;
+	}
+	.header-phone {
+		margin-left: 0;
+	}
+	.facebook {
+		img {
+			width: 70%;
+		}	
+	}
+	.instagram {
+		margin-left: 8px;
+		img {
+			width: 70%;
+		}	
+	}
+	.link-active {
+		font-size: 11px;
+		
+	}
+	.arrow-down {
+		width: 20%;
+	}
+	.menu-header__menu-wrap {
+		padding-left: 0;
+	}	
+}
+@include phone {
+	
+}
+@include iphone-X {
+	
+}	
+@include iphone-5 {
+	
 }

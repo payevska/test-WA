@@ -81,3 +81,58 @@ section-3 {
     position: absolute;
     right: 56px;
 }
+
+
+/* ------ media query ------ */
+@include television {
+	
+}
+@include desktop {
+	
+}
+@include laptop {
+	
+}
+
+/* ---- iPadPro ---- */
+@include iPadPro {
+	
+}
+@include iPadPro-portrait {
+	
+}
+@include iPadPro-landscape {
+		
+}
+
+/* ---- iPad ---- */
+@include iPad {	
+		
+}
+@include iPad-landscape {	
+		
+}
+@include iPad-portrait {
+		
+}
+@include tablet {
+	
+}
+@include tablet-mini {
+	
+}
+@include phone {
+
+}
+@include iphone-X {
+	
+}
+@include iphone-X-portrait {
+	
+}
+@include iphone-X-landscape {
+	
+}	
+@include iphone-5 {
+	
+}
