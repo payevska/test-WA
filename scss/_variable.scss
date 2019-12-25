@@ -85,6 +85,37 @@ button {
     }
 }
 
+.menu-gorizontal {
+	width: 100%;
+    margin: 0;
+    padding-left: 0;
+	ul {
+		display: flex;		
+	    justify-content: space-around;
+	    align-items: center;
+	    margin-bottom: 0;
+    	li {    		
+    		display: flex;
+    		position: relative;
+    	}
+	}
+}
+
+.menu-vertical {
+	&__menu-vertical-wrap {
+		padding-left: 0;
+		li {
+			padding: 0 0 10px 0;
+			a {
+				@extend a;
+				font-size: 14px;
+				color: $white;
+				padding: 0;
+			}
+		}	
+	}
+}
+
 
 @mixin television {
   @media (min-width: 1366px) and (max-width: 1439.98px) {

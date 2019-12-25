@@ -60,7 +60,8 @@ section-5 {
 
 
 .menu-vertical {
-	&__menu-wrap {
+	@extend .menu-vertical;
+	/* &__menu-wrap {
 		padding-left: 0;
 		li {
 			padding: 0 0 10px 0;
@@ -71,7 +72,7 @@ section-5 {
 				padding: 0;
 			}
 		}	
-	}
+	} */
 }
 
 .contact-vertical {
@@ -85,7 +86,9 @@ section-5 {
     	align-items: center;
 	}	
 }
+.link-footer {
 
+}
 .footer-phone {
     margin-left: 5px;
 }

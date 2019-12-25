@@ -48,4 +48,13 @@ $(document).ready(function(){
   ]
 });
 
+//burger in header-page
+
+	let menuElem = document.getElementById('burger-trip');
+    let titleElem = menuElem.querySelector('.burger-box__toggler');
+
+    titleElem.onclick = function() {
+      	menuElem.classList.toggle('open');
+    };	
+
 });

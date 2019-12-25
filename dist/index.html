@@ -16,13 +16,19 @@
 <!-- Header start -->
 	<header id="myHeader">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-between">
 				<div class="col col-sm header-wrap">
 					<div class="col-3 col-sm-2 header-left">
 						<a href="#myHome" class="logo-header">
 							<img src="images/logo-header.png" alt="logotype">
 						</a>
 					</div>
+					<!-- <div class="col-2 burger-box">
+						<input type="checkbox" class="burger-box__toggler" id="burger-toggler">
+						<div class="burger-box__burger">
+							<div class="burger-in"></div>
+						</div>
+					</div> -->
 					<div class="col-10 col-sm-10 header-right">					
 						<div class="first-line">
 							<div class="first-line__connection">
@@ -51,8 +57,14 @@
 						</div>						
 						<!-- menu start-->		
 						<div class="second-line">
-							<div class="menu-header">
-								<ul class="menu-header__menu-wrap">
+							<div class="menu-header burger-menu" id="burger-trip">
+								<!-- <div class="col-2 burger-box">
+									<input type="checkbox" class="burger-box__toggler" id="burger-toggler">
+									<div class="burger-box__burger">
+										<div class="burger-in"></div>
+									</div>
+								</div> -->
+								<ul class="menu-header__menu-wrap burger-ul">
 									<li class="menu-header__menu-wrap_link-group">
 										<a href="#myHome" class="link-active">Главная</a>
 									</li>						
@@ -100,7 +112,13 @@
 									<li class="menu-header__menu-wrap_link-group">
 										<a href="#myFooter" class="link-active">Контакты</a>
 									</li>			
-								</ul>												
+								</ul>
+								<div class="col-2 burger-box">
+									<input type="checkbox" class="burger-box__toggler" id="burger-toggler">
+									<div class="burger-box__burger">
+										<div class="burger-in"></div>
+									</div>
+								</div>												
 							</div>
 						</div>
 						<!-- menu finish-->
@@ -441,21 +459,21 @@
 						<div class="footer-menu__footer-menu-title">Навигация</div>
 						<div class="footer-menu__footer-menu-vertical">
 							<div class="menu-vertical">
-								<ul class="menu-vertical__menu-wrap">
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myHome" class="link-active">Главная</a>
+								<ul class="menu-vertical__menu-vertical-wrap">
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myHome" class="link-footer">Главная</a>
 									</li>
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myAbout" class="link-active">О компании</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myAbout" class="link-footer">О компании</a>
 									</li>						
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myOffer" class="link-active">Туры</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myOffer" class="link-footer">Туры</a>
 									</li>		
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myFooter" class="link-active">Контакты</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myFooter" class="link-footer">Контакты</a>
 									</li>
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#" class="link-active">Услуги</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#" class="link-footer">Услуги</a>
 									</li>			
 								</ul>							
 							</div>
@@ -465,15 +483,15 @@
 						<div class="footer-menu__footer-menu-title">Поддержка</div>
 						<div class="footer-menu__footer-menu-vertical">
 							<div class="menu-vertical">
-								<ul class="menu-vertical__menu-wrap">
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myHome" class="link-active">FAQ</a>
+								<ul class="menu-vertical__menu-vertical-wrap">
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myHome" class="link-footer">FAQ</a>
 									</li>
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myAbout" class="link-active">Блог</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myAbout" class="link-footer">Блог</a>
 									</li>						
-									<li class="menu-vertical__menu-wrap_link-group">
-										<a href="#myOffer" class="link-active">Обратная связь</a>
+									<li class="menu-vertical__menu-vertical-wrap_link-group">
+										<a href="#myOffer" class="link-footer">Обратная связь</a>
 									</li>	
 								</ul>												
 							</div>

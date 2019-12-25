@@ -37,13 +37,16 @@ header {
     flex-direction: column;
     padding-left: 12px;
     padding-right: 0;
-    @media (max-width: 575px) {
+    /* @media (max-width: 575px) {
         display: none;
-  	}
+      	} */
 }
 
 .first-line {
 	display: flex;
+	@media (max-width: 575px) {
+        display: none;
+  	}
 	justify-content: space-between;
 	padding-top: 15px;
 	&__connection {
@@ -54,25 +57,40 @@ header {
 
 .second-line {
 	display: flex;
+	/* @media (max-width: 575px) {
+	        display: none;
+	  	} */
 	background-color: #fbd341;
     border-radius: 10px;
     margin-top: 15px;
 }
 
 .menu-header {
-	width: 100%;
-    margin: 0;
-    padding-left: 0;
+	@extend .menu-gorizontal;
+	ul {
+		@media (max-width: 575px) {
+	        display: none;
+	  	}
+	  	li {
+
+	  	}
+	}
+	/* width: 100%;
+	    margin: 0;
+	    padding-left: 0;
 	&__menu-wrap {
 		display: flex;
+		@media (max-width: 575px) {
+	        display: none;
+	  	}
 	    justify-content: space-around;
 	    align-items: center;
 	    margin-bottom: 0;
-    	&_link-group {    		
-    		display: flex;
-    		position: relative;
-    	}
-	}
+	    	&_link-group {    		
+	    		display: flex;
+	    		position: relative;
+	    	}
+	} */
 }
 
 
@@ -160,6 +178,107 @@ header {
 .instagram {
 	margin-left: 25px;
 }
+
+// burger start
+
+.burger-box {
+	display: none;
+	@media (max-width: 575px) {
+        display: block;
+  	}
+	//position: fixed;
+	top: -5px;
+	left: 0;
+	z-index: 1;
+	&__toggler {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		opacity: 0;		
+	}
+	&__burger {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 54px;
+		height: 54px;
+		padding: 1rem;
+		//background: $shadow;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;	    
+	}
+}
+
+/*burger line*/
+.burger-in {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: $white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+/* Top and bottom lines */
+.burger-box__burger .burger-in:before, 
+.burger-box__burger .burger-in:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -8px;
+	width: 100%;
+	height: 2px;
+	background: inherit;	
+}
+
+/* Moves line down */
+.burger-box__burger .burger-in:after {
+	top: 8px;
+}
+
+/* Toggler animate */
+.burger-box__toggler:checked + .burger-box__burger > .burger-in {
+	transform: rotate(135deg); 
+}
+
+/* Turn lines into X */
+.burger-box__toggler:checked + .burger-box__burger > .burger-in:before, 
+.burger-box__toggler:checked + .burger-box__burger > .burger-in:after {
+	top: 0;
+	transform: rotate(90deg); 
+}
+
+/* Rotate on hover when checked */
+.burger-box__toggler:checked:hover + .burger-box__burger > .burger-in {
+	transform: rotate(225deg); 
+}
+
+/* Show-hide menu */
+
+
+
+.burger-menu.open .burger-ul {
+	display: block;
+	@extend .menu-gorizontal;
+	//display: flex;
+    //justify-content: flex-end;
+    //flex-direction: column;
+    //position: absolute;
+    li {
+
+    }
+}
+
+
+// burger finish
 
 
 /* ------ media query ------ */
@@ -282,8 +401,30 @@ header {
 @include phone {
 	.logo-header {
 	    display: flex;
-	    width: 850%;	    
+	    width: 70%;	    
 	}
+	.burger-menu {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.burger-menu.open .burger-ul {
+	
+	
+	display: flex;
+    
+    flex-direction: column;
+   
+    li {
+
+    }
+}
+
+.burger-menu.open {
+	display: flex;
+	//justify-content: space-between;
+}
+
 }
 @include iphone-X {
 	.logo-header {
