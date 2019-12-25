@@ -9,11 +9,15 @@ header {
 .header-wrap {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 6px;
+	padding-top: 5px;
 }
 
 .header-left {
-	padding-left: 15px;
+	display: flex;
+	padding-left: 0;
+	@media (max-width: 575.98px) {
+		padding-left: 15px;
+	}
 	@media (min-width: 1200px) {
         padding-left: 0;
   	}
@@ -21,8 +25,9 @@ header {
 
 .logo-header {
 	display: flex;
+	align-items: center;
 	img {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -85,12 +90,22 @@ header {
 	}
 }
 
+.tip-foto {
+	width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5px;
+	img {
+		width: 70%;
+	}
+}
+
 .name-submenu {
 	display: flex;
     align-items: center;
-    img {
+    /* img {
     	margin-left: 5px;
-    }
+    } */
 }
 
 .menu-header__menu-wrap_link-group .submenu {
@@ -163,7 +178,12 @@ header {
 		font-size: 14px;
 	}
 	.link-active {
-		font-size: 16px;
+		font-size: 16px;		
+	}
+	.tip-foto {
+		img {
+			width: 50%;
+		}
 	}
 }
 
@@ -196,18 +216,27 @@ header {
 	.first-line {
 		font-size: 14px;
 	}
+	.tip-foto {
+		margin-left: 2px;
+		img {
+			width: 40%;
+		}
+	}
 	.link-active {
 		font-size: 14px;
+		
 	}
-
-
-}
+	.menu-header__menu-wrap {
+			padding-left: 0;
+		}
+	}
 @include tablet-mini {
 	.header-right {
 	    max-width: 100%;
 	    padding-right: 0;
 	}
 	.first-line {
+		padding-top: 5px;
 		font-size: 10px;
 		&__connection {
 			&_icon { 
@@ -216,6 +245,9 @@ header {
 				}				
 			}
 		}
+	}
+	.second-line {
+		margin-top: 5px;
 	}
 	.header-adress {
 		margin-left: 3px;
@@ -235,22 +267,33 @@ header {
 		}	
 	}
 	.link-active {
-		font-size: 11px;
-		
+		font-size: 11px;		
 	}
-	.arrow-down {
-		width: 20%;
+	.tip-foto {
+		margin-left: 0;
+		img {
+			width: 40%;
+		}
 	}
 	.menu-header__menu-wrap {
 		padding-left: 0;
 	}	
 }
 @include phone {
-	
+	.logo-header {
+	    display: flex;
+	    width: 850%;	    
+	}
 }
 @include iphone-X {
-	
+	.logo-header {
+	    display: flex;
+	    width: 100%;	    
+	}
 }	
 @include iphone-5 {
-	
+	.logo-header {
+	    display: flex;
+	    width: 90%;	    
+	}
 }

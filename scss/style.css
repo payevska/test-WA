@@ -86,18 +86,23 @@ header {
 .header-wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 6px; }
+  padding-top: 5px; }
 
 .header-left {
-  padding-left: 15px; }
+  display: flex;
+  padding-left: 0; }
+  @media (max-width: 575.98px) {
+    .header-left {
+      padding-left: 15px; } }
   @media (min-width: 1200px) {
     .header-left {
       padding-left: 0; } }
 
 .logo-header {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .logo-header img {
-    width: 100%; }
+    max-width: 100%; }
 
 .header-right {
   max-width: 69%;
@@ -144,11 +149,20 @@ header {
   .link-active:hover {
     color: #000000; }
 
+.tip-foto {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px; }
+  .tip-foto img {
+    width: 70%; }
+
 .name-submenu {
   display: flex;
-  align-items: center; }
-  .name-submenu img {
-    margin-left: 5px; }
+  align-items: center;
+  /* img {
+  	margin-left: 5px;
+  } */ }
 
 .menu-header__menu-wrap_link-group .submenu {
   background-color: rgba(51, 151, 226, 0.8);
@@ -200,7 +214,10 @@ header {
     font-size: 14px; }
 
   .link-active {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .tip-foto img {
+    width: 50%; } }
 /* ---- iPadPro ---- */
 /* ---- iPad ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -210,17 +227,29 @@ header {
   .first-line {
     font-size: 14px; }
 
+  .tip-foto {
+    margin-left: 2px; }
+    .tip-foto img {
+      width: 40%; }
+
   .link-active {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .menu-header__menu-wrap {
+    padding-left: 0; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header-right {
     max-width: 100%;
     padding-right: 0; }
 
   .first-line {
+    padding-top: 5px;
     font-size: 10px; }
     .first-line__connection_icon img {
       width: 60%; }
+
+  .second-line {
+    margin-top: 5px; }
 
   .header-adress {
     margin-left: 3px; }
@@ -239,11 +268,25 @@ header {
   .link-active {
     font-size: 11px; }
 
-  .arrow-down {
-    width: 20%; }
+  .tip-foto {
+    margin-left: 0; }
+    .tip-foto img {
+      width: 40%; }
 
   .menu-header__menu-wrap {
     padding-left: 0; } }
+@media (min-width: 376px) and (max-width: 575.98px) {
+  .logo-header {
+    display: flex;
+    width: 850%; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .logo-header {
+    display: flex;
+    width: 100%; } }
+@media (min-width: 320px) and (max-width: 374.98px) {
+  .logo-header {
+    display: flex;
+    width: 90%; } }
 /* -------   home   ------- */
 section-1 {
   display: flex;
