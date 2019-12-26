@@ -85,6 +85,13 @@ button {
     }
 }
 
+input {
+	color: $white;
+	&::placeholder {
+		color: $white;
+	}
+}
+
 .menu-gorizontal {
 	width: 100%;
     margin: 0;
