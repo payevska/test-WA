@@ -29,7 +29,7 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 1199,
+      breakpoint: 992,  //1199
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
