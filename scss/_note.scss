@@ -176,6 +176,10 @@ form {
 		display: flex;
 	    width: 70%;
 	}
+	.form-control,
+	.custom-select {
+		font-size: 14px;
+	}
 	.btn-primary {
 		width: 75%;
 		margin-top: 24px;
@@ -204,6 +208,10 @@ form {
 	form {
 		display: flex;
 	    width: 80%;
+	}
+	.form-control,
+	.custom-select {
+		font-size: 13px;
 	}
 	.btn-primary {
 		width: 59%;
@@ -234,6 +242,10 @@ form {
 	form {
 		display: flex;
 	    width: 95%;
+	}
+	.form-control,
+	.custom-select {
+		font-size: 13px;
 	}
 	.btn-primary {
 		width: 59%;
@@ -271,6 +283,10 @@ form {
 		display: flex;
 	    width: 95%;
 	}
+	.form-control,
+	.custom-select {
+		font-size: 13px;
+	}
 	.btn-primary {
 		width: 59%;
 		font-size: 14px;
@@ -304,6 +320,10 @@ form {
 	}
 	.form-control {
 		font-size: 14px;
+	}
+	.form-control,
+	.custom-select {
+		font-size: 12px;
 	}
 	.btn-primary {
 		width: 80%;

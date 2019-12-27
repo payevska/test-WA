@@ -1,7 +1,8 @@
-/* -------   offer   ------- */
+/* -------   footer   ------- */
 section-5 {
 	display: flex;
 	display: -webkit-flex;
+	flex-direction: column;
 	padding: 50px 0 28px 0;
 	background-color: $blue;
 }
@@ -10,14 +11,13 @@ section-5 {
 	width: 100%;
 	display: flex;
 	font-size: 14px;
+	padding-bottom: 15px;
 }
 
 .footer-info {
-	width: 40%;
 	display: flex;
 	flex-direction: column;
 	padding-left: 0;
-	padding-right: 145px;
 	&__footer-logotype {
 		padding-bottom: 25px;
     	border-bottom: 1px solid $gray-line;
@@ -26,15 +26,15 @@ section-5 {
 		color: $white;
 		padding: 23px 0 26px 0;
 		border-bottom: 1px solid $gray-line;
-	}
-	&__footer-copyright {
-		display: flex;
-		color: $gray-new;
-	}
+	}	
 }
 
 .logo-WA {
 	margin-left: 5px;
+}
+
+.logo-footer {
+	width: 84%;
 }
 
 .footer-menu {
@@ -54,25 +54,8 @@ section-5 {
 	}
 }
 
-.footer-right {
-	width: 25%;
-} 
-
-
-.menu-vertical {
-	@extend .menu-vertical;
-	/* &__menu-wrap {
-		padding-left: 0;
-		li {
-			padding: 0 0 10px 0;
-			a {
-				@extend a;
-				font-size: 14px;
-				color: $white;
-				padding: 0;
-			}
-		}	
-	} */
+.meddle1 {
+	padding-left: 70px;
 }
 
 .contact-vertical {
@@ -80,17 +63,20 @@ section-5 {
 	flex-direction: column;
 		color: $gray-ton;
 		font-size: 14px;		
-	&__connection-footer {
+	&__connection-adress {
 		padding-bottom: 24px;
+		display: flex;
+    	align-items: center;
+	}
+	&__connection-phone {
 		display: flex;
     	align-items: center;
 	}	
 }
-.link-footer {
 
-}
-.footer-phone {
-    margin-left: 5px;
+.footer-phone,
+.footer-adress {
+    margin-left: 8px;
 }
 
 .contact-web {
@@ -98,6 +84,18 @@ section-5 {
 		padding-top: 22px;
 }
 
+.facebook-footer,
+.instagram-footer {
+	width: 70%;
+	margin-right: 5px;
+}
+
+
+.footer-copyright {
+	display: flex;
+	align-items: baseline;
+	color: $gray-new;
+}
 
 /* ------ media query ------ */
 @include television {
@@ -107,7 +105,9 @@ section-5 {
 	
 }
 @include laptop {
-	
+	.footer-right {
+	    padding-right: 0;
+	}
 }
 
 /* ---- iPadPro ---- */
@@ -132,23 +132,457 @@ section-5 {
 		
 }
 @include tablet {
-	
+	section-5 {
+		padding: 24px 0;
+	}
+	.footer-info {
+		&__footer-logotype {
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 70%;
+	}
+	.meddle1 {
+		padding-left: 70px;
+	}
+	.footer-menu {
+		&__footer-menu-title {
+		    padding-bottom: 14px;
+		}
+	}
+	.menu-vertical__menu-vertical-wrap li {
+	    padding: 0;
+	}
+	.menu-vertical__menu-vertical-wrap li a {
+		font-size: 12px;
+	}
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .contact-web {
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
 }
 @include tablet-mini {
-	
+	section-5 {
+		padding: 24px 5px;
+	}
+	.footer-info {
+		&__footer-logotype {
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 70%;
+	}
+	.meddle1 {
+		padding-left: 23px;
+	}
+	.footer-menu {
+		padding-right: 0;
+		&__footer-menu-title {
+		    padding-bottom: 14px;
+		}
+	}
+	.menu-vertical__menu-vertical-wrap li {
+	    padding: 0;
+	}
+	.menu-vertical__menu-vertical-wrap li a {
+		font-size: 11px;
+	}
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .footer-phone,
+	.footer-adress {
+	    font-size: 11px;
+	}
+    .contact-web {
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		font-size: 11px;
+		padding-bottom: 5px;
+	}
+	.copyright-text {
+		font-size: 11px;
+	}
+	.logo-WA {
+		img {
+			width: 80%;
+		}
+	}
 }
 @include phone {
-
+	section-5 {
+		padding: 10px 20px;
+	}
+	.footer-info {
+		flex-direction: row;
+		align-items: center;
+		border-bottom: 1px solid $gray-line;
+		padding-right: 0;
+		padding-bottom: 6px;
+		&__footer-logotype {
+			border-bottom: none;
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+			border-bottom: none;
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 80%;
+	}	
+	.footer-menu {
+		width: 60%;
+	    display: flex;
+	    flex-direction: column;
+	    padding-top: 7px;
+		padding-right: 0;
+		&__footer-menu-title {
+			text-align: center;
+			font-size: 12px;
+		    padding-bottom: 5px;
+		}
+	}
+	.meddle1 {
+		width: 85%;
+		padding-left: 0;
+	}
+	.menu-vertical {		
+		&__menu-vertical-wrap {
+			display: flex;
+    		justify-content: space-around;
+    		border-bottom: 1px solid $gray-line;
+    		margin-bottom: 0;
+    		padding-bottom: 8px;
+		 	li {
+	    		padding: 0;
+	    		a {
+	    			font-size: 11px;
+	    		}
+	    	}
+	    }
+	}
+	
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .footer-phone,
+	.footer-adress {
+	    font-size: 11px;
+	}
+	.adress-f,
+	.phone-f {
+		max-width: 6%;
+	}
+    .contact-web {
+    	display: flex;
+    	align-self: center;
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+		font-size: 11px;
+		padding-bottom: 5px;
+	}
+	.footer-copyright {
+		display: flex;
+    	justify-content: center;
+	}
+	.copyright-text {
+		font-size: 11px;
+	}
+	.logo-WA {
+		img {
+			width: 80%;
+		}
+	}
 }
 @include iphone-X {
+	section-5 {
+		padding: 10px 20px;
+	}
+	.footer-info {
+		flex-direction: row;
+		align-items: center;
+		border-bottom: 1px solid $gray-line;
+		padding-right: 0;
+		padding-bottom: 6px;
+		&__footer-logotype {
+			border-bottom: none;
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+			border-bottom: none;
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 80%;
+	}	
+	.footer-menu {
+		width: 60%;
+	    display: flex;
+	    flex-direction: column;
+	    padding-top: 7px;
+		padding-right: 0;
+		&__footer-menu-title {
+			text-align: center;
+			font-size: 12px;
+		    padding-bottom: 5px;
+		}
+	}
+	.meddle1 {
+		width: 85%;
+		padding-left: 0;
+	}
+	.menu-vertical {		
+		&__menu-vertical-wrap {
+			display: flex;
+    		justify-content: space-around;
+    		border-bottom: 1px solid $gray-line;
+    		margin-bottom: 0;
+    		padding-bottom: 8px;
+		 	li {
+	    		padding: 0;
+	    		a {
+	    			font-size: 11px;
+	    		}
+	    	}
+	    }
+	}
 	
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .footer-phone,
+	.footer-adress {
+	    font-size: 11px;
+	}
+	.adress-f,
+	.phone-f {
+		max-width: 6%;
+	}
+    .contact-web {
+    	display: flex;
+    	align-self: center;
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+		font-size: 11px;
+		padding-bottom: 5px;
+	}
+	.footer-copyright {
+		display: flex;
+    	justify-content: center;
+	}
+	.copyright-text {
+		font-size: 11px;
+	}
+	.logo-WA {
+		img {
+			width: 80%;
+		}
+	}
 }
 @include iphone-X-portrait {
 	
 }
 @include iphone-X-landscape {
 	
-}	
-@include iphone-5 {
+}
+@include iphone-6-7-8 {
+	section-5 {
+		padding: 10px 20px;
+	}
+	.footer-info {
+		flex-direction: row;
+		align-items: center;
+		border-bottom: 1px solid $gray-line;
+		padding-right: 0;
+		padding-bottom: 6px;
+		&__footer-logotype {
+			border-bottom: none;
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+			border-bottom: none;
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 80%;
+	}	
+	.footer-menu {
+		width: 60%;
+	    display: flex;
+	    flex-direction: column;
+	    padding-top: 7px;
+		padding-right: 0;
+		&__footer-menu-title {
+			text-align: center;
+			font-size: 12px;
+		    padding-bottom: 5px;
+		}
+	}
+	.meddle1 {
+		width: 85%;
+		padding-left: 0;
+	}
+	.menu-vertical {		
+		&__menu-vertical-wrap {
+			display: flex;
+    		justify-content: space-around;
+    		border-bottom: 1px solid $gray-line;
+    		margin-bottom: 0;
+    		padding-bottom: 8px;
+		 	li {
+	    		padding: 0;
+	    		a {
+	    			font-size: 11px;
+	    		}
+	    	}
+	    }
+	}
 	
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .footer-phone,
+	.footer-adress {
+	    font-size: 11px;
+	}
+	.adress-f,
+	.phone-f {
+		max-width: 6%;
+	}
+    .contact-web {
+    	display: flex;
+    	align-self: center;
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+		font-size: 11px;
+		padding-bottom: 5px;
+	}
+	.footer-copyright {
+		display: flex;
+    	justify-content: center;
+	}
+	.copyright-text {
+		font-size: 11px;
+	}
+	.logo-WA {
+		img {
+			width: 80%;
+		}
+	}
+}		
+@include iphone-5 {
+	section-5 {
+		padding: 10px 20px;
+	}
+	.footer-info {
+		flex-direction: row;
+		align-items: center;
+		border-bottom: 1px solid $gray-line;
+		padding-right: 0;
+		padding-bottom: 6px;
+		&__footer-logotype {
+			border-bottom: none;
+		    padding-bottom: 10px;
+		}
+		&__footer-text {
+			border-bottom: none;
+		    padding: 5px 0;
+		}
+	}
+	.logo-footer {
+		width: 80%;
+	}	
+	.footer-menu {
+		width: 60%;
+	    display: flex;
+	    flex-direction: column;
+	    padding-top: 7px;
+		padding-right: 0;
+		&__footer-menu-title {
+			text-align: center;
+			font-size: 12px;
+		    padding-bottom: 5px;
+		}
+	}
+	.meddle1 {
+		width: 85%;
+		padding-left: 0;
+	}
+	.menu-vertical {		
+		&__menu-vertical-wrap {
+			display: flex;
+    		justify-content: space-around;
+    		border-bottom: 1px solid $gray-line;
+    		margin-bottom: 0;
+    		padding-bottom: 8px;
+		 	li {
+	    		padding: 0;
+	    		a {
+	    			font-size: 11px;
+	    		}
+	    	}
+	    }
+	}
+	
+	.contact-vertical__connection-adress {
+    	padding-bottom: 10px;
+    }
+    .footer-phone,
+	.footer-adress {
+	    font-size: 11px;
+	}
+	.adress-f,
+	.phone-f {
+		max-width: 6%;
+	}
+    .contact-web {
+    	display: flex;
+    	align-self: center;
+	    padding-top: 14px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+		font-size: 11px;
+		padding-bottom: 5px;
+	}
+	.footer-copyright {
+		display: flex;
+    	justify-content: center;
+	}
+	.copyright-text {
+		font-size: 11px;
+	}
+	.logo-WA {
+		img {
+			width: 80%;
+		}
+	}
 }
