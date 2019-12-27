@@ -47,16 +47,13 @@ form {
     line-height: 1.5;
     color: $white;
     @extend input;
+    @extend input::placeholder;
     background-color: $black-opacity;
     background-clip: padding-box;
     border: none;
     border-bottom: 1px solid $white-opacity;
     border-radius: 0;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.form-control {
-	@extend input::placeholder;
 }
 
 .custom-select {
@@ -79,10 +76,24 @@ form {
     appearance: none;
 }
 .btn-primary {
-	@extend button;
+	@extend button;	
 	font-size: 18px;
 	color: $black;
 }
+.btn-primary:hover {
+    color: $black;
+    background-color: $yellow;
+		opacity: 0.9;
+		transition: 1s;
+    border-color: $yellow;
+}
+.form-control::-webkit-input-placeholder {
+    color: $white;
+}
+.form-control:focus {
+    color: $black;
+}
+
 
 /* ------ media query ------ */
 @include television {

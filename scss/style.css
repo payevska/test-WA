@@ -75,9 +75,11 @@ button, .btn, .btn-primary {
       color: #000000; }
 
 input, .form-control {
+  caret-color: #000000;
   color: #ffffff; }
-  input::placeholder, .form-control {
-    color: #ffffff; }
+
+input::placeholder, .form-control {
+  color: #ffffff; }
 
 .menu-gorizontal, .menu-header, .burger-menu.open .burger-ul {
   width: 100%;
@@ -1451,6 +1453,19 @@ option {
 
 .btn-primary {
   font-size: 18px;
+  color: #000000; }
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #fbd341;
+  opacity: 0.9;
+  transition: 1s;
+  border-color: #fbd341; }
+
+.form-control::-webkit-input-placeholder {
+  color: #ffffff; }
+
+.form-control:focus {
   color: #000000; }
 
 /* ------ media query ------ */

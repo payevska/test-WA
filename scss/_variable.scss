@@ -86,11 +86,12 @@ button {
 }
 
 input {
-	color: $white;
-	&::placeholder {
+	caret-color: $black;
+	color: $white;	
+}
+input::placeholder {
 		color: $white;
 	}
-}
 
 .menu-gorizontal {
 	width: 100%;
