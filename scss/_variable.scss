@@ -1,4 +1,6 @@
 body {
+	width: 100%;
+	overflow-x: hidden;
 	font: {
 		family: 'Arial', sans-serif;
 		size: 16px;
@@ -7,7 +9,12 @@ body {
 	color: $black;
 }
 
-
+.row {
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+    margin-left: 0;
+}
 
 .container {
 	padding-left: 0;
@@ -123,6 +130,8 @@ input::placeholder {
 		}	
 	}
 }
+
+
 
 
 @mixin television {

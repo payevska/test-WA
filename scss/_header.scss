@@ -6,6 +6,11 @@ header {
     width: 100%;
 }
 
+.row {
+	margin-right: 0;
+    margin-left: 0;
+}
+
 .header-wrap {
 	display: flex;
 	justify-content: space-between;
@@ -118,10 +123,6 @@ header {
 	padding-bottom: 20px;
 }
 
-.menu-header__menu-wrap_link-group:hover > .submenu{
-		display: flex;
-}
-
 .link-sb1 {
 	min-width: 190px;
 	padding-right: 26px;
@@ -183,7 +184,7 @@ header {
 	&__burger {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -20px;
 		z-index: 1;
 		width: 54px;
 		height: 54px;
@@ -226,14 +227,16 @@ header {
 
 /* Toggler animate */
 .burger-box__toggler:checked + .burger-box__burger > .burger-in {
-	transform: rotate(135deg); 
+	transform: rotate(135deg);
+	background-color: $black; 
 }
 
 /* Turn lines into X */
 .burger-box__toggler:checked + .burger-box__burger > .burger-in:before, 
 .burger-box__toggler:checked + .burger-box__burger > .burger-in:after {
 	top: 0;
-	transform: rotate(90deg); 
+	transform: rotate(90deg);
+	background-color: $black; 
 }
 
 /* Rotate on hover when checked */
@@ -362,6 +365,8 @@ header {
 		}	
 	}
 	.link-active {
+		padding-left: 74px;
+    padding-right: 74px;
 		font-size: 11px;		
 	}
 	.tip-foto {
@@ -382,40 +387,47 @@ header {
 	.burger-menu {
 		display: flex;
 	    justify-content: flex-end;
-	}
-
+	}	
 	.burger-menu.open .burger-ul {
 		width: 40%;
 		display: flex;
 	    flex-direction: column;
-	    align-items: start;
+	    align-items: start;	     
+   		padding-left: 50px;
 	    li {
-	    	//display: none;
 	    	margin-left: 0;
 		    padding-top: 14px;
 		    padding-bottom: 0px;
 	    }
 	}
+	.name-submenu {
+		padding-right: 60px;
+	}
 	.burger-menu.open .burger-ul ul {
-	    display: none;
-	}    
+        display: none;
+        align-items: start;
+    	padding: 0 0 15px 0;
+    	border-left: 20px solid transparent;
+    } 
 	
-	.burger-menu.open .burger-ul li a:hover + .burger-menu.open .burger-ul ul {
+	.burger-menu.open .burger-ul li:hover ul	 {
 		display: flex;
 	}
-	/* .burger-menu.open .burger-ul li:hover > .submenu{
-		display: flex;
-	} */
-
 	.burger-menu.open {
 		display: flex;
-		//justify-content: space-between;
+	}
+	.menu-header__menu-wrap_link-group .submenu  {
+		padding-top: 5px;
+		z-index: 0;
+		li {
+			padding-top: 3px;
+		}
 	}
 	.burger-menu.open .burger-background {
-		background-color: $blue;
+		background-color: $gray-ton2;
 	    position: absolute;
 	    display: flex;
-	    justify-content: flex-start;
+	    justify-content: space-between;
 	    align-items: start;
 	    width: 100%;
 	    height: 100%;
@@ -431,17 +443,204 @@ header {
 	.link-sb2 {
 	    left: 138px;
 	}
-
 }
+@include iphone-6-7-8 {
+	.logo-header {
+	    display: flex;
+	    width: 70%;	    
+	}
+	.burger-menu {
+		display: flex;
+	    justify-content: flex-end;
+	}	
+	.burger-menu.open .burger-ul {
+		width: 40%;
+		display: flex;
+	    flex-direction: column;
+	    align-items: start;	     
+   		padding-left: 20px;
+	    li {
+	    	margin-left: 0;
+		    padding-top: 14px;
+		    padding-bottom: 0px;
+	    }
+	}
+	.name-submenu {
+		padding-right: 45px;
+	}
+	.burger-menu.open .burger-ul ul {
+        display: none;
+        align-items: start;
+    	padding: 0 0 15px 0;
+    	border-left: 20px solid transparent;
+    } 
+	
+	.burger-menu.open .burger-ul li:hover ul	 {
+		display: flex;
+	}
+	.burger-menu.open {
+		display: flex;
+	}
+	.menu-header__menu-wrap_link-group .submenu  {
+		padding-top: 5px;
+		z-index: 0;
+		li {
+			padding-top: 3px;
+		}
+	}
+	.burger-menu.open .burger-background {
+		background-color: $gray-ton2;
+	    position: absolute;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: start;
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    position: fixed;
+	    opacity: 0.9;
+	    top: 0;
+	    left: 0;
+	}
+	.link-sb1 {
+	    left: 131px;
+	}
+	.link-sb2 {
+		min-width: 225px;
+	    left: 138px;
+	}
+}	
 @include iphone-X {
 	.logo-header {
 	    display: flex;
-	    width: 100%;	    
+	    width: 70%;	    
+	}
+	.burger-menu {
+		display: flex;
+	    justify-content: flex-end;
+	}	
+	.burger-menu.open .burger-ul {
+		width: 40%;
+		display: flex;
+	    flex-direction: column;
+	    align-items: start;	     
+   		padding-left: 20px;
+	    li {
+	    	margin-left: 0;
+		    padding-top: 14px;
+		    padding-bottom: 0px;
+	    }
+	}
+	.name-submenu {
+		padding-right: 45px;
+	}
+	.burger-menu.open .burger-ul ul {
+        display: none;
+        align-items: start;
+    	padding: 0 0 15px 0;
+    	border-left: 20px solid transparent;
+    } 
+	
+	.burger-menu.open .burger-ul li:hover ul	 {
+		display: flex;
+	}
+	.burger-menu.open {
+		display: flex;
+	}
+	.menu-header__menu-wrap_link-group .submenu  {
+		padding-top: 5px;
+		z-index: 0;
+		li {
+			padding-top: 3px;
+		}
+	}
+	.burger-menu.open .burger-background {
+		background-color: $gray-ton2;
+	    position: absolute;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: start;
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    position: fixed;
+	    opacity: 0.9;
+	    top: 0;
+	    left: 0;
+	}
+	.link-sb1 {
+	    left: 131px;
+	}
+	.link-sb2 {
+		min-width: 225px;
+	    left: 138px;
 	}
 }	
 @include iphone-5 {
 	.logo-header {
 	    display: flex;
-	    width: 90%;	    
+	    width: 70%;	    
+	}
+	.burger-menu {
+		display: flex;
+	    justify-content: flex-end;
+	}	
+	.burger-menu.open .burger-ul {
+		width: 52%;
+		display: flex;
+	    flex-direction: column;
+	    align-items: start;	     
+   		padding-left: 20px;
+	    li {
+	    	margin-left: 0;
+		    padding-top: 14px;
+		    padding-bottom: 0px;
+	    }
+	}
+	.name-submenu {
+		padding-right: 45px;
+	}
+	.burger-menu.open .burger-ul ul {
+        display: none;
+        align-items: start;
+    	padding: 0 0 15px 0;
+    	border-left: 20px solid transparent;
+    } 
+	
+	.burger-menu.open .burger-ul li:hover ul	 {
+		display: flex;
+	}
+	.burger-menu.open {
+		display: flex;
+	}
+	.menu-header__menu-wrap_link-group .submenu  {
+		padding-top: 5px;
+		z-index: 0;
+		margin-left: -18px;
+		li {
+			padding-top: 3px;
+		}
+	}
+	.burger-menu.open .burger-background {
+		background-color: $gray-ton2;
+	    position: absolute;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: start;
+	    width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    position: fixed;
+	    opacity: 0.9;
+	    top: 0;
+	    left: 0;
+	}
+	.link-sb1 {
+		min-width: 175px;
+	    left: 131px;
+	}
+	.link-sb2 {
+		min-width: 174px;
+	    left: 138px;
 	}
 }
