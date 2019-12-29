@@ -131,33 +131,28 @@ input::placeholder {
 	}
 }
 
-
-
-
 @mixin television {
-  @media (min-width: 1366px) and (max-width: 1439.98px) {
-    @content;
-  }
+	@media (min-width: 1366px) and (max-width: 1439.98px) {
+		@content;
+	}
 }
-
 @mixin desktop {
-  @media (min-width: 1200px) and (max-width: 1365.98px) {
-    @content;
-  }
+	@media (min-width: 1200px) and (max-width: 1365.98px) {
+		@content;
+	}
 }
 @mixin laptop {
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    @content;
-  }
+	@media (min-width: 992px) and (max-width: 1199.98px) {
+		@content;
+	}
 }
 /* ---- iPadPro ---- */
 @mixin iPadPro {
 	@media only screen 
 	and (min-width: 1024px) and (max-width: 1366px) {
-    @content;
+    	@content;
     }
 }
-
 @mixin iPadPro-portrait {
     @media only screen 
     and (min-device-width: 1024px) 
@@ -182,8 +177,7 @@ input::placeholder {
 	and (min-width: 768px) and (max-width: 1024px) {
 	    @content;
     }
-} 
-
+}
 @mixin iPad-portrait {
 	@media only screen 
 	and (min-device-width : 768px) 
@@ -202,47 +196,46 @@ input::placeholder {
 	    @content;
 	}
 }
-
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    @content;
-  }
+	@media (min-width: 768px) and (max-width: 991.98px) {
+		@content;
+	}
 }  
 @mixin tablet-mini {
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    @content;
-  }
+	@media (min-width: 576px) and (max-width: 767.98px) {
+		@content;
+	}
 }
 @mixin phone {
-  @media (min-width: 376px) and (max-width: 575.98px) {
-    @content;
-  }
+	@media (min-width: 376px) and (max-width: 575.98px) {
+		@content;
+	}
 }
 @mixin iphone-X {
-  @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-    @content;
-  }
+	@media only screen 
+	and (min-device-width : 375px) 
+	and (max-device-width : 812px)
+	and (-webkit-device-pixel-ratio : 3) {
+		@content;
+	}
 }
 @mixin iphone-X-portrait {
-  @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) {
-    @content;
-  }
+	@media only screen 
+	and (min-device-width : 375px) 
+	and (max-device-width : 812px) 
+	and (-webkit-device-pixel-ratio : 3)
+	and (orientation : portrait) {
+		@content;
+	}
 }
 @mixin iphone-X-landscape {
-  @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-    @content;
-  }
+	@media only screen 
+	and (min-device-width : 375px) 
+	and (max-device-width : 812px) 
+	and (-webkit-device-pixel-ratio : 3)
+	and (orientation : landscape) {
+		@content;
+	}
 }
 @mixin iphone-6-7-8 {
     @media only screen 

@@ -7,7 +7,6 @@ section-4 {
 	padding: 45px 0; 
 }
 
-
 .note-wrap {
 	&__title {
 		@extend h2;
@@ -21,6 +20,12 @@ option {
     white-space: pre;
     min-height: 0.4em;
     padding: 0px 2px 1px;
+    @extend a;
+    color: $black;    
+}
+
+option:checked { 
+    color: $yellow; 
 }
 
 .note-form {
@@ -31,10 +36,6 @@ option {
 .custom-select {
 		font-size: 18px;
 		color: $white;
-}
-
-form {
-	
 }
 
 .form-control {
@@ -75,11 +76,13 @@ form {
     -moz-appearance: none;
     appearance: none;
 }
+
 .btn-primary {
 	@extend button;	
 	font-size: 18px;
 	color: $black;
 }
+
 .btn-primary:hover {
     color: $black;
     background-color: $yellow;
@@ -87,46 +90,16 @@ form {
 		transition: 1s;
     border-color: $yellow;
 }
+
 .form-control::-webkit-input-placeholder {
     color: $white;
 }
+
 .form-control:focus {
     color: $black;
 }
 
-
 /* ------ media query ------ */
-@include television {
-	
-}
-@include desktop {
-	
-}
-@include laptop {
-	
-}
-
-/* ---- iPadPro ---- */
-@include iPadPro {
-	
-}
-@include iPadPro-portrait {
-	
-}
-@include iPadPro-landscape {
-		
-}
-
-/* ---- iPad ---- */
-@include iPad {	
-		
-}
-@include iPad-landscape {	
-		
-}
-@include iPad-portrait {
-		
-}
 @include tablet {
 	.note-wrap {
 		text-align: center;
@@ -252,12 +225,6 @@ form {
 		font-size: 14px;
 		margin-top: 24px;
 	}	
-}
-@include iphone-X-portrait {
-	
-}
-@include iphone-X-landscape {
-	
 }
 @include iphone-6-7-8 {
 	.note-wrap {

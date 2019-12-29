@@ -42,9 +42,6 @@ header {
     flex-direction: column;
     padding-left: 12px;
     padding-right: 0;
-    /* @media (max-width: 575px) {
-        display: none;
-      	} */
 }
 
 .first-line {
@@ -62,9 +59,6 @@ header {
 
 .second-line {
 	display: flex;
-	/* @media (max-width: 575px) {
-	        display: none;
-	  	} */
 	background-color: #fbd341;
     border-radius: 10px;
     margin-top: 15px;
@@ -167,7 +161,6 @@ header {
 	@media (max-width: 575px) {
         display: block;
   	}
-	//position: fixed;
 	top: -5px;
 	left: 0;
 	z-index: 1;
@@ -189,7 +182,6 @@ header {
 		width: 54px;
 		height: 54px;
 		padding: 1rem;
-		//background: $shadow;
 		display: flex;
 	    justify-content: center;
 	    align-items: center;	    
@@ -245,28 +237,14 @@ header {
 }
 
 /* Show-hide menu */
-
-
-
 .burger-menu.open .burger-ul {
 	display: block;
-	@extend .menu-gorizontal;
-    li {
-
-    }
+	@extend .menu-gorizontal;    
 }
-
 
 // burger finish
 
-
 /* ------ media query ------ */
-@include television {
-	
-}
-@include desktop {
-	
-}
 @include laptop {
 	.logo-header {
 		width: 79%;
@@ -284,30 +262,7 @@ header {
 		}
 	}
 }
-
-/* ---- iPadPro ---- */
-@include iPadPro {
-	
-}
-@include iPadPro-portrait {
-	
-}
-@include iPadPro-landscape {
-		
-}
-
-/* ---- iPad ---- */
-@include iPad {	
-		
-}
-@include iPad-landscape {	
-		
-}
-@include iPad-portrait {
-		
-}
 @include tablet {
-
 	.header-right {
 	    max-width: 100%;
 	}
@@ -325,9 +280,9 @@ header {
 		
 	}
 	.menu-header__menu-wrap {
-			padding-left: 0;
-		}
+		padding-left: 0;
 	}
+}
 @include tablet-mini {
 	.header-right {
 	    max-width: 100%;

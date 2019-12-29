@@ -3,8 +3,7 @@ section-2 {
 	display: flex;
 	display: -webkit-flex;
 	flex-direction: column;
-	padding: 75px 65px;
-    
+	padding: 75px 65px;    
 }
 
 .offer-wrap {
@@ -22,11 +21,6 @@ section-2 {
 		@extend h3;
 	}
 }
-
-.offer-slider {
-	
-}
-
 
 .info-slide {
 	display: flex;
@@ -59,13 +53,11 @@ section-2 {
     		padding-top: 16px;
     		padding-bottom: 20px;
     		border-top: 1px solid $gray-dark;
-
 	    }
 	    &_info-price {
 	    	display: flex;
 	    }
 	}
-
 }
 
 .i1 {
@@ -115,18 +107,16 @@ section-2 {
     justify-content: center;
 }
 
-
 .offer-slider > .slick-prev:before {
 	background-image: url('../dist/images/arrow-left.png');
 	background-repeat: no-repeat;    
-    color: #ffffff00;
-    
-    }
+    color: $white-opacity2;
+}
 
 .offer-slider > .slick-next:before {
 	background-image: url('../dist/images/arrow-right.png');
 	background-repeat: no-repeat;    
-    color: #ffffff00;    
+    color: $white-opacity2;    
 }
 
 .offer-slider > .slick-prev {
@@ -140,8 +130,7 @@ section-2 {
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list
-{
+.slick-slider .slick-list {
     -webkit-font-smoothing: antialiased;
 }
 
@@ -149,14 +138,7 @@ section-2 {
     color: $white;
 }
 
-
 /* ------ media query ------ */
-@include television {
-	
-}
-@include desktop {
-	
-}
 @include laptop {
 	.info-slide {
 		width: 415px;
@@ -180,31 +162,6 @@ section-2 {
 		    }
 		}
 	}
-}
-
-/* ---- iPadPro ---- */
-@include iPadPro {
-	
-}
-@include iPadPro-portrait {
-	
-}
-@include iPadPro-landscape {
-		
-}
-
-/* ---- iPad ---- */
-@include iPad {	
-		
-}
-@include iPad-landscape {	
-		
-}
-@include iPad-portrait {
-		
-}
-@include tablet {
-	
 }
 @include tablet-mini {
 	.info-slide {
@@ -347,13 +304,6 @@ section-2 {
 	    left: 15px;
 	    top: 11px;
 	}
-}
-
-@include iphone-X-portrait {
-	
-}
-@include iphone-X-landscape {
-	
 }
 @include iphone-6-7-8 {
 	.offer-wrap {

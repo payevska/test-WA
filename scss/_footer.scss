@@ -90,7 +90,6 @@ section-5 {
 	margin-right: 5px;
 }
 
-
 .footer-copyright {
 	display: flex;
 	align-items: baseline;
@@ -98,38 +97,10 @@ section-5 {
 }
 
 /* ------ media query ------ */
-@include television {
-	
-}
-@include desktop {
-	
-}
 @include laptop {
 	.footer-right {
 	    padding-right: 0;
 	}
-}
-
-/* ---- iPadPro ---- */
-@include iPadPro {
-	
-}
-@include iPadPro-portrait {
-	
-}
-@include iPadPro-landscape {
-		
-}
-
-/* ---- iPad ---- */
-@include iPad {	
-		
-}
-@include iPad-landscape {	
-		
-}
-@include iPad-portrait {
-		
 }
 @include tablet {
 	section-5 {
@@ -401,12 +372,6 @@ section-5 {
 			width: 80%;
 		}
 	}
-}
-@include iphone-X-portrait {
-	
-}
-@include iphone-X-landscape {
-	
 }
 @include iphone-6-7-8 {
 	section-5 {

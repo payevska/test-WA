@@ -17,10 +17,6 @@ section-3 {
 	@extend h2;
 }
 
-.text-box {
-	
-}
-
 .about-contant {
 	display: flex;
 	&__about-foto {
@@ -33,7 +29,6 @@ section-3 {
 		img {
 			position: absolute;
 			right: 0px;
-			//max-width: 150%;
 		}
 	}
 	&__about-text {
@@ -48,7 +43,6 @@ section-3 {
 	height: 193px;
 	overflow: auto;
     padding-right: 20px;
-    //border-right: 1px solid $gray-dark;
 }
 
 .scroll::-webkit-scrollbar {
@@ -85,39 +79,7 @@ section-3 {
     right: 4px;
 }
 
-
 /* ------ media query ------ */
-@include television {
-	
-}
-@include desktop {
-	
-}
-@include laptop {
-	
-}
-
-/* ---- iPadPro ---- */
-@include iPadPro {
-	
-}
-@include iPadPro-portrait {
-	
-}
-@include iPadPro-landscape {
-		
-}
-
-/* ---- iPad ---- */
-@include iPad {	
-		
-}
-@include iPad-landscape {	
-		
-}
-@include iPad-portrait {
-		
-}
 @include tablet {
 	.about-title {
 	    padding-bottom: 40px;
@@ -242,12 +204,6 @@ section-3 {
 	.line-vertical {
 	    height: 141px;
     }
-}
-@include iphone-X-portrait {
-	
-}
-@include iphone-X-landscape {
-	
 }
 @include iphone-6-7-8 {
 	.about-title {

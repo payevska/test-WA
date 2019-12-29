@@ -31,13 +31,13 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
-a, button a, .btn a, .btn-primary a, .menu-vertical__menu-vertical-wrap li a, .link-active, .link-sb1 li, .link-sb2 li {
+a, button a, .btn a, .btn-primary a, .menu-vertical__menu-vertical-wrap li a, .link-active, .link-sb1 li, .link-sb2 li, option {
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff; }
-  a:hover, .menu-vertical__menu-vertical-wrap li a:hover, .link-active:hover, .link-sb1 li:hover, .link-sb2 li:hover {
+  a:hover, .menu-vertical__menu-vertical-wrap li a:hover, .link-active:hover, .link-sb1 li:hover, .link-sb2 li:hover, option:hover {
     color: #ffffff;
     text-decoration: none;
     opacity: 0.5;
@@ -76,10 +76,10 @@ button, .btn, .btn-primary {
   button:hover, .btn:hover, .btn-primary:hover {
     opacity: 0.9;
     transition: 1s; }
-  button a, .btn a, .btn-primary a, button .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li button a, .btn .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .btn a, .btn-primary .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .btn-primary a, button .link-active, .btn .link-active, .btn-primary .link-active, button .link-sb1 li, .link-sb1 button li, .btn .link-sb1 li, .link-sb1 .btn li, .btn-primary .link-sb1 li, .link-sb1 .btn-primary li, button .link-sb2 li, .link-sb2 button li, .btn .link-sb2 li, .link-sb2 .btn li, .btn-primary .link-sb2 li, .link-sb2 .btn-primary li {
+  button a, .btn a, .btn-primary a, button .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li button a, .btn .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .btn a, .btn-primary .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .btn-primary a, button .link-active, .btn .link-active, .btn-primary .link-active, button .link-sb1 li, .link-sb1 button li, .btn .link-sb1 li, .link-sb1 .btn li, .btn-primary .link-sb1 li, .link-sb1 .btn-primary li, button .link-sb2 li, .link-sb2 button li, .btn .link-sb2 li, .link-sb2 .btn li, .btn-primary .link-sb2 li, .link-sb2 .btn-primary li, button option, .btn option, .btn-primary option {
     font-size: 18px;
     color: #000000; }
-    button a:hover, .btn a:hover, .btn-primary a:hover, button .link-active:hover, .btn .link-active:hover, .btn-primary .link-active:hover, button .link-sb1 li:hover, .link-sb1 button li:hover, .btn .link-sb1 li:hover, .link-sb1 .btn li:hover, .btn-primary .link-sb1 li:hover, .link-sb1 .btn-primary li:hover, button .link-sb2 li:hover, .link-sb2 button li:hover, .btn .link-sb2 li:hover, .link-sb2 .btn li:hover, .btn-primary .link-sb2 li:hover, .link-sb2 .btn-primary li:hover {
+    button a:hover, .btn a:hover, .btn-primary a:hover, button .link-active:hover, .btn .link-active:hover, .btn-primary .link-active:hover, button .link-sb1 li:hover, .link-sb1 button li:hover, .btn .link-sb1 li:hover, .link-sb1 .btn li:hover, .btn-primary .link-sb1 li:hover, .link-sb1 .btn-primary li:hover, button .link-sb2 li:hover, .link-sb2 button li:hover, .btn .link-sb2 li:hover, .link-sb2 .btn li:hover, .btn-primary .link-sb2 li:hover, .link-sb2 .btn-primary li:hover, button option:hover, .btn option:hover, .btn-primary option:hover {
       color: #000000; }
 
 input, .form-control {
@@ -106,7 +106,7 @@ input::placeholder, .form-control {
   padding-left: 0; }
   .menu-vertical__menu-vertical-wrap li {
     padding: 0 0 10px 0; }
-    .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+    .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
       font-size: 14px;
       color: #ffffff;
       padding: 0; }
@@ -150,10 +150,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-left: 12px;
-  padding-right: 0;
-  /* @media (max-width: 575px) {
-      display: none;
-    	} */ }
+  padding-right: 0; }
 
 .first-line {
   display: flex;
@@ -168,9 +165,6 @@ header {
 
 .second-line {
   display: flex;
-  /* @media (max-width: 575px) {
-          display: none;
-    	} */
   background-color: #fbd341;
   border-radius: 10px;
   margin-top: 15px; }
@@ -325,8 +319,6 @@ header {
 
   .tip-foto img {
     width: 50%; } }
-/* ---- iPadPro ---- */
-/* ---- iPad ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header-right {
     max-width: 100%; }
@@ -649,6 +641,15 @@ section-1 {
   background: linear-gradient(-6deg, rgba(15, 37, 71, 0.49) 0%, rgba(25, 44, 74, 0.32) 68%, rgba(34, 51, 77, 0) 100%);
   top: 50%;
   left: 0; }
+  @media (min-width: 2403px) {
+    .content-slider {
+      width: 69%; } }
+  @media (min-width: 1200px) and (max-width: 1279.98px) {
+    .content-slider {
+      width: 80%; } }
+  @media (min-width: 1440px) and (max-width: 1919.98px) {
+    .content-slider {
+      width: 70%; } }
 
 .slide {
   width: 100%;
@@ -666,9 +667,12 @@ section-1 {
   padding-bottom: 45px;
   top: 70%;
   left: 0%; }
+  @media (min-width: 2403px) {
+    .box-text {
+      width: 60%; } }
   @media (min-width: 1440px) and (max-width: 1919.98px) {
     .box-text {
-      width: 85%; } }
+      width: 82%; } }
   @media (min-width: 1366px) and (max-width: 1439.98px) {
     .box-text {
       width: 87%; } }
@@ -677,7 +681,7 @@ section-1 {
       width: 92%; } }
   @media (min-width: 1200px) and (max-width: 1279.98px) {
     .box-text {
-      width: 96%; } }
+      width: 94%; } }
 
 .main-title {
   padding-bottom: 40px; }
@@ -693,7 +697,8 @@ section-1 {
   left: -27%; }
   @media (min-width: 2403px) {
     .home-slider > .slick-dots {
-      bottom: 15%; } }
+      bottom: 15%;
+      left: -20%; } }
   @media (min-width: 1440px) and (max-width: 1919.98px) {
     .home-slider > .slick-dots {
       left: -37%; } }
@@ -705,7 +710,7 @@ section-1 {
       left: -41%; } }
   @media (min-width: 1200px) and (max-width: 1279.98px) {
     .home-slider > .slick-dots {
-      left: -44%; } }
+      left: -43%; } }
 
 .home-slider > .slick-dots li button:before, .home-slider > .slick-dots li .btn:before, .home-slider > .slick-dots li .btn-primary:before {
   color: #ffffff;
@@ -924,81 +929,6 @@ section-1 {
   .btn {
     font-size: 12px;
     padding: 6px 16px; } }
-/* section-1 {
-	display: flex;
-	display: -webkit-flex;  
-}
-
-.home {
-    width: 100%;
-}
-
-.home-slider {
-}
-
-.home-wrap {    
-	display: flex;
-    padding-top: 320px;		
-}
-
-.content-slider {
-	width: 70%;
-	display: flex;
-	justify-content: flex-end;
-	position: absolute;
-	background: linear-gradient( -6deg, rgba(15,37,71,0.49) 0%, rgba(25,44,74,0.32) 68%, rgba(34,51,77,0) 100%);
-	top: 50%;
-	left: 0;
-}
-.slide {
-	width: 100%;
-	overflow: hidden;
-}
-
-.img-wrap img {
-	max-height: 100vh;
-    min-width: 100vw;
-}
-
-.box-text {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-	padding-top: 65px;
-    padding-bottom: 45px;
-    top: 70%;
-    left: 0%;
-}
-
-.main-title {
-	padding-bottom: 40px;
-}
-.main-button {
-}
-
-.btn {
-	@extend button;
-}
-
-.home-slider > .slick-dots {
-    bottom: 27px;
-    left: -27%;
-}
-
-.home-slider > .slick-dots li button:before {
-	color: $white;
-	font-size: 20px;
-	opacity: 0.8;
-}
-
-.home-slider > .slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: $yellow;
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 0;
-} */
 /* -------   offer   ------- */
 section-2 {
   display: flex;
@@ -1090,12 +1020,12 @@ section-2 {
 .offer-slider > .slick-prev:before {
   background-image: url("../dist/images/arrow-left.png");
   background-repeat: no-repeat;
-  color: #ffffff00; }
+  color: rgba(255, 255, 255, 0); }
 
 .offer-slider > .slick-next:before {
   background-image: url("../dist/images/arrow-right.png");
   background-repeat: no-repeat;
-  color: #ffffff00; }
+  color: rgba(255, 255, 255, 0); }
 
 .offer-slider > .slick-prev {
   left: -15px;
@@ -1131,8 +1061,6 @@ section-2 {
         line-height: 1.3;
         padding-top: 10px;
         padding-bottom: 10px; } }
-/* ---- iPadPro ---- */
-/* ---- iPad ---- */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .info-slide {
     width: 415px;
@@ -1429,8 +1357,6 @@ section-3 {
   right: 4px; }
 
 /* ------ media query ------ */
-/* ---- iPadPro ---- */
-/* ---- iPad ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .about-title {
     padding-bottom: 40px; }
@@ -1606,7 +1532,11 @@ option {
   display: block;
   white-space: pre;
   min-height: 0.4em;
-  padding: 0px 2px 1px; }
+  padding: 0px 2px 1px;
+  color: #000000; }
+
+option:checked {
+  color: #fbd341; }
 
 .note-form {
   background-color: rgba(0, 0, 0, 0.6);
@@ -1669,8 +1599,6 @@ option {
   color: #000000; }
 
 /* ------ media query ------ */
-/* ---- iPadPro ---- */
-/* ---- iPad ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .note-wrap {
     text-align: center; }
@@ -1934,8 +1862,6 @@ section-5 {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .footer-right {
     padding-right: 0; } }
-/* ---- iPadPro ---- */
-/* ---- iPad ---- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   section-5 {
     padding: 24px 0; }
@@ -1957,7 +1883,7 @@ section-5 {
   .menu-vertical__menu-vertical-wrap li {
     padding: 0; }
 
-  .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+  .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
     font-size: 12px; }
 
   .contact-vertical__connection-adress {
@@ -1992,7 +1918,7 @@ section-5 {
   .menu-vertical__menu-vertical-wrap li {
     padding: 0; }
 
-  .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+  .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
     font-size: 11px; }
 
   .contact-vertical__connection-adress {
@@ -2057,7 +1983,7 @@ section-5 {
     padding-bottom: 8px; }
     .menu-vertical__menu-vertical-wrap li {
       padding: 0; }
-      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
         font-size: 11px; }
 
   .contact-vertical__connection-adress {
@@ -2134,7 +2060,7 @@ section-5 {
     padding-bottom: 8px; }
     .menu-vertical__menu-vertical-wrap li {
       padding: 0; }
-      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
         font-size: 11px; }
 
   .contact-vertical__connection-adress {
@@ -2211,7 +2137,7 @@ section-5 {
     padding-bottom: 8px; }
     .menu-vertical__menu-vertical-wrap li {
       padding: 0; }
-      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
         font-size: 11px; }
 
   .contact-vertical__connection-adress {
@@ -2288,7 +2214,7 @@ section-5 {
     padding-bottom: 8px; }
     .menu-vertical__menu-vertical-wrap li {
       padding: 0; }
-      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li {
+      .menu-vertical__menu-vertical-wrap li a, .menu-vertical__menu-vertical-wrap li .link-active, .menu-vertical__menu-vertical-wrap li .link-sb1 li, .link-sb1 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li .link-sb2 li, .link-sb2 .menu-vertical__menu-vertical-wrap li li, .menu-vertical__menu-vertical-wrap li option {
         font-size: 11px; }
 
   .contact-vertical__connection-adress {
